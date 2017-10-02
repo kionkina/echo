@@ -24,12 +24,15 @@ def hello():
     print "PRINTING request.method..."
     print request.method #GET
 
+
     print "PRINTING request.args..."
     print request.args #ImmutableMultiDict([('lastname', u'ion'), ('firstname', u'karina')])
-    
-    print "PRINTING request.args[firstname]"
-    print request.args['firstname'] #karina
-
+       
+    try:
+        print "PRINTING request.args[firstname]"
+        print request.args['firstname'] #karina
+    except:
+        ""
 #------------------------------------------------------------------------------------------------
 
 
