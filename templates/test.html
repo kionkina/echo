@@ -3,12 +3,32 @@
 <head>
 </head>
 <body>
-<b> WELCOME, </b> {{their_name}} <br>
-This page used a {{r_method}} method.
-<form >
-<input type ="text" name = "firstname">
-<input type = "submit" value = "Submit"> 
-</form>
+<center>
 
+
+<! runs only if name was entered>
+
+{% if name_exists %}
+
+<font size = "7">
+<b>  Welcome,  <br>
+{{first[0].upper() + first[1:].lower()}} {{last[0].upper() + last[1:].lower()}} </font><br> <br> 
+</font> </b> 
+
+{% else %}
+
+<font>
+<form >
+<input type ="text" name = "firstname" placeholder="First Name" size="35">
+<input type = "text" name = "lastname" placeholder="Last Name" size="35">
+<input type = "submit" value = "Submit"> <br> <br> 
+</form>
+</font>
+
+{% endif %}
+
+This page used a {{r_method}} method.
+
+</center>
 </body>
 </html>

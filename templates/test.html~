@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<b> WELCOME, </b> {{their_name}} <br>
+This page used a {{r_method}} method.
+<form >
+<input type ="text" name = "firstname">
+<input type = "submit" value = "Submit"> 
+</form>
+
+</body>
+</html>
